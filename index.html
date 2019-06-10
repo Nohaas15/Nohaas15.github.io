@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> <strong> Noah Haas</strong> Portfolio responsive portfolio template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Google fonts - Roboto + Roboto Slab-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- animate.css-->
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- Reference item-->
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container"><a href="#intro" class="navbar-brand scrollTo"> <strong>Noah Haas Portfolio</strong> </a>
+          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
+          <div id="navbarcollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Intro</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Intro Image-->
+    <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
+      <div class="container text-center">
+        <h1 data-animate="fadeInDown" class="text-shadow mb-5">Noah Haas</h1>
+        <p data-animate="slideInUp" class="h3 text-shadow text-400">I am a student at Oakwood school. Heres a bit about me</p>
+      </div>
+    </section>
+    <!-- About-->
+    <section id="about" class="about-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">About me</h2>
+        </header>
+        <div class="row">
+          <div data-animate="fadeInUp" class="text-center">
+            <p>I am 15 years old and I've lived in Los Angeles my whole life. I was born a cedars sanai hospital and went to preschool at UCLA while my mom was finishing her residency to become a psychiatrist. I used to live in UCLA family housing from when I was a baby to when I was about 6 or 7 years old. I have gone to Oakwood school since kindergarden and have enjoyed my time at the school. I play the cello and have since 3rd grade. I am also on the oakwood basketball team and am a part of our oakwood admissions comittee where we tour new studens who are looking at oakwood. This summer, I am going to attend an ACLU program in Washington DC where we will learn about civil advocacy as well as meet with people in congress</p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-6">
+            <div class="skill-item">
+            </div>
+          </div>
+          <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/about-me.jpg" width=300 height= 300 alt="This is me in front of a beach"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--
+    *** REFERENCES IMAGE ***
+    _________________________________________________________
+    -->
+    <section id="references">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="mb-5 text-center">
+            <h2 data-animate="fadeInUp" class="title">My work and life</h2>
+            <p data-animate="fadeInUp" class="lead"> Here are some projects that I've been working on.</p>
+          </div>
+          <ul id="filter" data-animate="fadeInUp">
+            <li class="active"><a href="#" data-filter="all">All</a></li>
+          </ul>
+          <div id="detail">
+            <div class="row">
+              <div class="col-lg-10 mx-auto"><span class="close">×</span>
+                <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                <div class="text-center">
+                  <h1 id="detail-title" class="title"></h1>
+                </div>
+                <div id="detail-content"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Reference detail-->
+          <div id="references-masonry" data-animate="fadeInUp">
+            <div class="row">
+                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/ACLU.jpg" alt="ACLU logo with statue of liberty hand in backround" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">ACLU Summer Program</h3>
+                            <p>This summer I will be attending a program at the ACLU in Washington DC</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/ACLU.jpg" class="sr-only reference-description">
+                        <p>This summer I will be joining about 180 kids from around the country in an ACLU program in Washington DC. We will be learning about civil advocacy and participate in lectures and seminars as well as meet with congressmen and women about specific issues.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/Paris1.jpg" alt="Louvre sunset with eiffel tower in backround" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Paris Trip</h3>
+                            <p>This spring break my family and I took a trip to Paris</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/Paris1.jpg,img/Paris2.jpg" class="sr-only reference-description">
+                        <p> This Spring break my family and I went on a 10 day vacation to Paris, France. While in Paris we saw many of the famous sights like the Eiffel Tower, The Louvre, and we were lucky enough to see Notre Dame before it tragically burned down. We also had some amazing food from many different restaurants.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="other" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/Alabama1.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title"> Alabama Immersion</h3>
+                            <p>This winter I traveled to Alabama with some other kids in my school as part of a program that the school offers.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/Alabama1.jpg" class="sr-only reference-description">
+                        <p>Our school offers a program called immersion. In this program we spend two weeks before winter break immersing ourselves in a subject that we select from the school Immersion fair. My immersion traveled to Alabama where we went to 16th street baptist church, the civil rights museum, MLK's house, the Edmund Pettis bridge and many more places. While in Alabama we learned about the civil rights movement as well as the reprocussions that we still face today.</p>
+                      </div>
+                    </div>
+                  </div>
+
+    </section>
+    <!-- Contact-->
+    <section id="contact" data-animate="bounceIn" class="contact-section contact">
+      <div class="container">
+        <header class="text-center">
+          <h2 class="title">Contact me</h2>
+        </header>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form id="contact-form" method="post" action="">
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" name="name" placeholder="Your firstname *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="surname" placeholder="Your lastname *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="email" placeholder="Your email *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="phone" placeholder="Your phone" class="form-control">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea name="message" placeholder="Message for me *" rows="4" required="required" class="form-control"></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-outline-primary">Send message</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+            <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <script src="js/front.js"></script>
+  </body>
+</html>
